@@ -51,7 +51,7 @@ public class LinkedList {
           return head.data;     // 0(1)
       }
       
-      public int getLast(){
+      public int getLast(){             //  o(n) if there is tail monitored then O(1)
         //check the list is emptu
         // iterate the nodes from the head node tiill node which have the next is null
         //loop till last element ,complete the loop
@@ -121,7 +121,7 @@ public class LinkedList {
     }
     
 
-  public void delete(int value)     //O(n)
+  public void delete(int value)     //O(n)    
   {
    //if head matches with the deleted value then change the head position to the next position     
    // else iterate from head and check wheteher any of the element matches with the given value

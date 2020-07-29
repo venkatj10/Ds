@@ -29,16 +29,7 @@ public class DS {
        System.out.println(dn.contains(50));
        System.out.println(dn.isEmpty());
        dn.delete(5);
-       dn.printAll();
-       
-       
-       
-       
-       
-       
-       
-       
-       
+       dn.printAll();  
     }
     
     

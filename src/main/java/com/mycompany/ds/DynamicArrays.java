@@ -15,6 +15,7 @@ public class DynamicArrays {
     int size=0;
     Object data[];
 
+    
     public DynamicArrays(int initialCapacity) {
         this.initialCapacity=initialCapacity;
         data=new Object[initialCapacity];  
@@ -56,7 +57,7 @@ public class DynamicArrays {
     //put the value
     //increment size++ 
      System.out.println("data size"+data.length);
-     if(size==index){
+     if(size==initialCapacity){
          resize();
      }
      
@@ -90,12 +91,12 @@ public class DynamicArrays {
  
  
  
- public void set(int index,int value){
+ public void set(int index,int value){           //o(1)
      data[index]=value;
  }
  
  
- public Object get(int index ){   
+ public Object get(int index ){              //o(1)
      return data[index];
  }
  
